@@ -1,0 +1,9 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<p class="lead mb-3">Email: <%= user.email %></p>
+<p class="lead mb-3">
+  Registration date: <%= `${new Date(user.date).getDate()}-${new
+  Date(user.date).getMonth()+1}-${new Date(user.date).getFullYear()}` %>
+</p>
+
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
